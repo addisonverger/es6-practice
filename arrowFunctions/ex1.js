@@ -7,8 +7,18 @@ let introduction = function(name, otherName) {
     return introduction;
 }
 
+let introduction = (name, otherName) => {
+    let introduction = name + ", let me introduce you to " + otherName;
+    return introduction;
+}
+
 // This one only has one parameter! 
 let boringFunction = function (topic) {
+    let complain = topic + " is so boooooring!!!";
+    return complain;
+}
+
+let boringFunction = topic => {
     let complain = topic + " is so boooooring!!!";
     return complain;
 }
@@ -17,3 +27,5 @@ let boringFunction = function (topic) {
 let shout = function() {
     return "AAAHHHH!!"
 }
+
+let shout = () => "AAAHHHH!!"

@@ -9,3 +9,10 @@ let getDogsOwnersBestFriend = () => {
         return friend.name;
     })
 }
+
+let getDogsOwnersBestFriend = async () => {
+    let dog = await get('/dog/1')
+    let owner = await get(`/owner/${dog.owner}`)
+    let friend = await get(`/friend/${owner.bestFriend}`)
+    return friend.name
+}

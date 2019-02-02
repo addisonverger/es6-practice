@@ -9,4 +9,4 @@ let array = [
 // Using destructuring, and in one line of code, 
 //  create 2 variables that extract blue, green, and pink
 
-YOUR_CODE_HERE
+let [ blue, green, , pink, , ] = array
