@@ -1,9 +1,9 @@
 
 
 let fullName = user => {
-    let { name: { first = "", last = "" }} = user;
+    let { firstname = "Addison", lastname = "Verger" } = user;
 
-    return first + ' ' + last;
+    return firstname + ' ' + lastname;
 }
 
 console.log(fullName({}));

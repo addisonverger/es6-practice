@@ -11,3 +11,4 @@ let object = {
 //  extract a variable from "object" that contains the string "hi"
 
 
+let { inception: { inceptionAgain: { onceMore: { message } } } } = object
